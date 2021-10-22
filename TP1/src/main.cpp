@@ -92,5 +92,3 @@ int main () {
   
   return 0;
 }
-
-// g++ *.cpp -o Main
