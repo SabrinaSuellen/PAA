@@ -39,21 +39,9 @@ void printVector(long long int arr[], long long int n) {
 }
 
 void ClonarVetor(long long int* ar, long long int* ar2, long long int tam){
-  /*
-  cout << "vetor ar: " <<endl;
-  printVector(ar, tam);
-  cout << "vetor ar2: " <<endl;
-  printVector(ar2, tam);
-  */
-
-
+  
   for(int i = 0; i < tam; i++){
     ar2[i] = ar[i];
   }
-  /*
-  cout << "vetor ar: " <<endl;
-  printVector(ar, tam);
-  cout << "vetor ar2: " <<endl;
-  printVector(ar2, tam);
-  */
+  
 }

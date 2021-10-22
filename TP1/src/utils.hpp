@@ -6,3 +6,4 @@ void printVector(long long int arr[], long long int n);
 void ClonarVetor(long long int* ar, long long int* ar2, long long int tam);
 
 #endif
+
