@@ -2,8 +2,11 @@
 
 all: lib #tests
 lib: basic
-#tests: random-tests
+# tests: decre-tests
 
+# crescent-tests
+# decre-tests
+# random-tests
 
 
 basic:
@@ -14,6 +17,11 @@ basic:
 
 #flow.o:
 #	g++ -c src/Flow.cpp -o bin/flow.o -Wall
+crescent-tests:
+	g++ tests/crescent/*.cpp -o bin/crescent_tests.o -Wall
+
+decre-tests:
+	g++ tests/decre/*.cpp -o bin/decre_tests.o -Wall
 
 random-tests:
 	g++ tests/random/*.cpp -o bin/random_tests.o -Wall
@@ -21,8 +29,14 @@ random-tests:
 clean:
 	rm -f bin/*.o bin/*.out
 
-run-random:
-	./bin/random_tests.o
-
 run: 
 	./bin/basic.o
+
+run-decre:
+	./bin/decre_tests.o
+
+run-crescent:
+	./bin/crescent_tests.o
+
+run-random:
+	./bin/random_tests.o

@@ -1,4 +1,4 @@
-#include "random.h"
+#include "crescent.h"
 
 void run(){
     long long int quantidade = 1000;
@@ -8,7 +8,7 @@ void run(){
     long long int *vector = new long long int[quantidade];
     long long int *vectorAux = new long long int[quantidade];
 
-    gerador(vector, quantidade, 3);
+    gerador(vector, quantidade, 1);
     ClonarVetor(vector, vectorAux, quantidade);
 
     cout <<"Testando o MergeSort..."<<endl;

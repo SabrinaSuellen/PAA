@@ -1,20 +1,7 @@
-#include <iostream>
-#include <time.h>
-#include <string> 
-#include <cstdlib>
+#include "decre.h"
 
-#include "utils.hpp"
-#include "mergesort.hpp"
-#include "radix.hpp"
-#include "insertion.hpp"
-
-using namespace std;
-
-// Driver Code
-int main () {
-  /*
-  */
-  long long int quantidade = 10;
+void run(){
+    long long int quantidade = 1000;
     
     Experimentos* experimentos= new Experimentos;
 
@@ -26,7 +13,7 @@ int main () {
 
     cout <<"Testando o MergeSort..."<<endl;
     clock_t c2, c1; /* variáveis que contam ciclos do processador */
-    printVector(vector, quantidade);
+    //printVector(vector, quantidade);
 
 
     c1=clock(); /* coloque aqui o código que você quer medir o tempo de execução */
@@ -40,7 +27,7 @@ int main () {
     cout<<"\nNumero de comparacoes.......: "<<experimentos->comparacao;
     cout<<"\n-----------------------------------------------"<<endl;
 
-    printVector(vector, quantidade);
+    //printVector(vector, quantidade);
 
     ClonarVetor(vectorAux, vector, quantidade);
     cout<<"\n\n\nTestando o InsertionSort..."<<endl;
@@ -65,7 +52,7 @@ int main () {
     ClonarVetor(vectorAux, vector, quantidade);
     cout<<"\n\n\nTestando o RadixSort..."<<endl;
     //clock_t c2, c1; /* variáveis que contam ciclos do processador */
-    //printVector(vector, quantidade);
+    printVector(vector, quantidade);
 
     c1=clock(); /* coloque aqui o código que você quer medir o tempo de execução */
     
@@ -89,8 +76,5 @@ int main () {
     delete[] vector;
     delete[] vectorAux;
     delete[] experimentos;
-  
-  return 0;
-}
 
-// g++ *.cpp -o Main
+}

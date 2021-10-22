@@ -15,8 +15,11 @@ void gerador (long long int* vector, long long int n, int situacao) {
 
     case 2: {
       // preenche o vetor de forma decrescente
-      for (int i=n; i>=1; i++)
-        vector[i] = i;
+      int aux = 0;
+      for (int i=n; i>0; i--){
+        vector[aux] = i;
+        aux++;
+      }
     } break;
 
     case 3: {
